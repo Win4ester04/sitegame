@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="forgame.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/index/icons8.png"
+    />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div class="ct-info">
+      <header class="container">
+        <span class="logo">logo</span>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="news.html">News</a></li>
+            <li class="btn"><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container port-top">
+        <div class="port-top-info">
+          <a href="index.html"><h6>Home ></h6></a>
+          <h6 class="page">Contact us</h6>
+          <h1 class="port-h1">
+            Lorem Ipsum is simply dummy text of the printing and.
+          </h1>
+          <h6 class="port-h6">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </h6>
+        </div>
+        <img class="global" src="img/contact/Global.png" alt="" />
+
+        <div class="container main-footer">
+          <div class="block1">
+            <h3>Follow us</h3>
+            <div class="links">
+              <a href=""><img src="img/contact/facebook.png" alt="" /></a>
+              <a href=""><img src="img/contact/instagram.png" alt="" /></a>
+              <a href=""><img src="img/contact/twitter.png" alt="" /></a>
+              <a href=""><img src="img/contact/linkedin.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="block2">
+            <img src="img/contact/phone.png" alt="" />
+            <h3>+94 4444 5555 6</h3>
+          </div>
+          <div class="block3">
+            <img src="img/contact/gps.png" alt="" />
+            <h3>but also the leap into electronic typesetting</h3>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="container">
+          <h2>Say hello</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing.</p>
+          <form>
+            <div class="inline">
+              <div>
+                <label>First Name</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label>Last Name</label>
+                <input type="text" />
+              </div>
+            </div>
+            <label>Email Address</label>
+            <input type="email" class="one-line" />
+            <label>Message</label>
+            <textarea class="one-line"></textarea>
+            <button type="submit">Get in touch</button>
+          </form>
+        </div>
+        <!-- <img class="line1" src="img/contact/line1.png" alt="" /> -->
+        <!-- <img class="line2" src="img/contact/line2.png" alt="" /> -->
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container email">
+        <h3>Lorem Ipsum</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
+          corrupti.
+        </p>
+        <div class="block">
+          <div>
+            <h4>Stay in the loop</h4>
+            <p>
+              Subscribe to receive the latest news and updates about TDA. We
+              promise not to spam you!
+            </p>
+          </div>
+          <div>
+            <input
+              type="email"
+              id="emailField"
+              placeholder="Enter email address"
+            />
+            <button type="submit" onclick="checkEmail()">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="blocks container">
+        <div>
+          <span class="logo">logo</span>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div>
+          <h4>About us</h4>
+          <ul>
+            <li><a href="#">Zeux</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact us</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <p>+908 89097 890</p>
+        </div>
+        <div class="contacts">
+          <a href="#"><img src="img/index/facebook.png" alt="" /></a>
+          <a href="#"><img src="img/index/instagram.png" alt="" /></a>
+          <a href="#"><img src="img/index/twitter.png" alt="" /></a>
+          <a href="#"><img src="img/index/linkedin.png" alt="" /></a>
+        </div>
+      </div>
+      <hr />
+      <p>Copyright ® 2024 Lorem All rights Recerved</p>
+    </footer>
+
+    <script>
+      function checkEmail() {
+        let email = document.querySelector("#emailField").value;
+        if (!email.includes("@")) alert("Нет символа @");
+        else if (!email.includes(".")) alert("Нет символа .");
+        else alert("Все отлично!");
+      }
+    </script>
+  </body>
+</html>
